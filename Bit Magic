@@ -1,0 +1,84 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	//and:11->1 10->0 01->0 00->0
+	//or: 11->1 01->1 10->1 00->0
+	//~ :flip the bits 1->0 0->1
+	//>>:(right shift):decrese the value fromula for(n>>i)==(n)/(2^i)
+	//<<:(ledt shift):increse the value formula for(n<<i)==n*(2^i)
+	//^(xor):11->0 00->0 10->1 01->1
+	//single number:x=x^arr[i] ::::x
+	//swap a and b::: a=a^b::b=a^b::a=a^b
+	//odd or even :: N&1==1 :: odd and N&1==0 ::even
+	//(n,i):ith bit set or not---->>>>n&(1<<i)!=0 thrn bit else not bit
+	//set ith bit(n,i)---->n|(1<<i)
+	//make ith bit 0(n,i)---->(n)&(~(1<<i))
+	//remove the last set bit--->(n)&(n-1)//1000&111==0000(8->0)
+	//power of two----->(n)&(n-1)==0 then power of 2 else not
+	//count of set
+	//while(n)
+	//{ if(n&1)
+	//c++
+	//n=n>>1;
+	//}
+	//(n)&(n-1)
+	//c++
+	//=============================================================================================
+	//single number -2
+// 	vector<int>vet{1,1,2,3,4,3,4,5};
+// 	int n=vet.size();
+// 	int a=0;
+// 	for(int i=0;i<n;i++)
+// 	{
+// 		a=a^vet[i];
+// 	}
+// 	int k=0;
+// 	while(a)
+// 	{
+// 		if(a&1)
+// 		{
+// 			break;
+// 		}
+// 		k++;
+// 	}
+// 	int x1=0,x2=0;
+// 	for(int i=0;i<n;i++)
+// 	{
+// 		if(vet[i]&(1<<k))
+// 		{
+// 			x1=x1^vet[i];
+// 		}
+// 		else
+// 		{
+// 			x2=x2^vet[i];
+// 		}
+// 	}
+// 	cout<<x1<<" "<<x2;
+	//=======================================================================================================
+	//subsets in bits
+	// vector<int>vet{1,2,3};
+	// vector<vector<int>>a;
+	// int n=vet.size();
+	// for(int i=0;i<pow(2,n);i++)
+	// {
+	// 	vector<int>b;
+	// 	for(int j=0;j<n;j++)
+	// 	{
+	// 		if(i&(1<<j))
+	// 		{
+	// 			b.push_back(vet[j]);
+	// 		}
+	// 	}
+	// 	a.push_back(b);
+	// 	b.clear();
+	// }
+	// for(auto i:a)
+	// {
+	// 	for(auto j:i)
+	// 	{
+	// 		cout<<j<<" ";
+	// 	}
+	// 	cout<<endl;
+	// }
+ }
